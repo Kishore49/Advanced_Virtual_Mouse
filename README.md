@@ -27,6 +27,13 @@ pip install opencv-python mediapipe pyautogui numpy
 ```
 
 ### Running the Virtual Mouse
+
+Click the `Run Python File` Button to start in VS Code.
+
+Or, 
+
+in the terminal, run:
+
 ```sh
 python app.py
 ```
