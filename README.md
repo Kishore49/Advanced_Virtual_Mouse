@@ -28,7 +28,7 @@ pip install opencv-python mediapipe pyautogui numpy
 
 ### Running the Virtual Mouse
 ```sh
-python virtual_mouse.py
+python app.py
 ```
 
 ## Usage
