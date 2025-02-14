@@ -1,3 +1,6 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+
 import cv2
 import numpy as np
 import mediapipe as mp
@@ -24,11 +27,11 @@ class VirtualMouse:
             min_tracking_confidence=0.7)
         
         # Configuration
-        self.smoothing_factor = 7
-        self.cursor_sens = 1.4
-        self.scroll_sens = 120
+        self.smoothing_factor = 8
+        self.cursor_sens = 1.2
+        self.scroll_sens = 100
         self.click_threshold = 0.05
-        self.dbl_click_threshold = 0.3
+        self.dbl_click_threshold = 0.8
         self.drag_threshold = 0.08
         
         # State tracking
